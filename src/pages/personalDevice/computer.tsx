@@ -17,7 +17,7 @@ export default function ik() {
           <div className="flex flex-col text-left text-lg">
             <p>1. Connect to the UO Secure Network</p>
             <p>
-              2. Download the{" "}
+              2. Download the
               <Link
                 className="bg-midnight underline"
                 href="http://is-duckprints:9163/setup"
