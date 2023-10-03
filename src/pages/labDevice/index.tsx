@@ -6,13 +6,13 @@ import Restart from "~/components/Restart";
 import { api } from "~/utils/api";
 
 export default function Home() {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  // const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
     <>
       <Head>
         <title>UO Printing</title>
-        <meta name="UOselection" content="" />
+        <meta name="UOselection" content="UO Device" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#007030] to-[#FEE11A]">

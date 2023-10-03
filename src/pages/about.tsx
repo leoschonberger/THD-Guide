@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Restart from "~/components/Restart";
 
 export default function About() {
