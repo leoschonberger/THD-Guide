@@ -34,4 +34,5 @@ export default function Footer() {
   //     </footer>
   //   </>
   // );
+  return <p>.</p>;
 }
