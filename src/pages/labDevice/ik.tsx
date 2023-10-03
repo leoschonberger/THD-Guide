@@ -1,5 +1,5 @@
 import Footer from "~/components/Footer";
-import Restart from "~/components/Restart";
+import Restart from "~/components/Rewind";
 
 export default function ik() {
   return (

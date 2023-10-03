@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-export default function Restart() {
+export default function Rewind() {
   const router = useRouter();
 
   return (
