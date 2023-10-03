@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import Footer from "~/foot";
+import Footer from "~/components/Footer";
+import Restart from "~/components/Restart";
 
 import { api } from "~/utils/api";
 
@@ -22,8 +23,8 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
             <Link
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="/labDevice/lab"
-              // target="_blank"
+              href="https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=140517"
+              target="_blank"
             >
               <h3 className="text-2xl font-bold">Labs Machine →</h3>
               <div className="text-lg">
@@ -32,8 +33,8 @@ export default function Home() {
             </Link>
             <Link
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-              href="/labDevice/ik/"
-              // target="_blank"
+              href="https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=140515"
+              target="_blank"
             >
               <h3 className="text-2xl font-bold">Internet Kiosk →</h3>
               <div className="text-lg">
@@ -42,6 +43,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <Restart />
         <Footer />
       </main>
     </>
