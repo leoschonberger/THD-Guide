@@ -4,8 +4,6 @@ import Footer from "~/components/Footer";
 import Restart from "~/components/Rewind";
 import ThdHeader from "~/components/ThdHeader";
 
-import { api } from "~/utils/api";
-
 type FormatHeadingProps = {
   hed: string;
   startIndex: number;

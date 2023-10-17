@@ -1,5 +1,4 @@
 import Restart from "~/components/Rewind";
-import ThdHeader from "~/components/ThdHeader";
 
 export default function About() {
   return (

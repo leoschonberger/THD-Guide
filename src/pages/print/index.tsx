@@ -1,8 +1,5 @@
 import Selection2 from "~/components/Selection2";
 
-import Rewind from "~/components/Rewind";
-import Footer from "~/components/Footer";
-
 export default function Print() {
   return (
     <>

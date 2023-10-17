@@ -1,6 +1,6 @@
 import Selection2 from "~/components/Selection2";
 
-export default function () {
+export default function uoDevicePrinting() {
   return (
     <Selection2
       pageTitle="THD- UO Device Printing"

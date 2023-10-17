@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Footer from "~/components/Footer";
-import Rewind from "~/components/Rewind";
 import ThdHeader from "~/components/ThdHeader";
 
 type FormatHeadingProps = {
