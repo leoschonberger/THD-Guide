@@ -44,23 +44,24 @@ export default function Home() {
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/20 p-4 text-white hover:bg-white/30"
               href="/print/"
             >
-              <h3 className="text-center text-2xl font-bold">Printing →</h3>
+              <h3 className="text-center text-2xl font-bold">Printing 🖨️</h3>
               <div className="text-center text-lg">Print at the UO</div>
             </Link>
             {/*Second box*/}
             <Link
               className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/20 p-4 text-white hover:bg-white/30"
-              href="/"
+              href="https://service.uoregon.edu/TDClient/2030/Portal/KB/?CategoryID=6954"
+              target="_blank"
             >
-              <h3 className="text-center text-2xl font-bold">Wifi →</h3>
+              <h3 className="text-center text-2xl font-bold">Wifi 📡</h3>
               <div className="text-center text-lg">Get help getting online</div>
             </Link>
             {/*Third box*/}
             <Link
               className="max-w-s flex flex-col gap-4 rounded-xl bg-white/20 p-4 text-white hover:bg-white/30"
-              href="/"
+              href="/passwords/"
             >
-              <h3 className="text-center text-2xl font-bold">Passwords →</h3>
+              <h3 className="text-center text-2xl font-bold">Passwords 🔐</h3>
               <div className="text-center text-lg">
                 Reset your DuckID or DuckWeb
               </div>

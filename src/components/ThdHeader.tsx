@@ -12,7 +12,7 @@ export default function ThdHeader() {
             <div className="flex py-3 hover:underline md:p-1">
               <Link
                 href="/"
-                className="py-1 text-lg font-extrabold tracking-tight text-white outline sm:text-[1rem] md:p-1.5"
+                className="py-1 text-lg font-extrabold tracking-tight text-white outline outline-gray-800 sm:text-[1rem] md:p-1.5"
                 style={{ padding: "0.5rem" }}
               >
                 THD Portal

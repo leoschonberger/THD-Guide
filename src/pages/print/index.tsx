@@ -16,9 +16,8 @@ export default function Print() {
         o2={"UO Device →"}
         o2d={"Learn how to print from a computer lab machine."}
         o2l={"/print/uodevice/"}
-        reset={false}
+        reset={true}
       />
-      {/* <Footer /> */}
     </>
   );
 }

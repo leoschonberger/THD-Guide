@@ -10,13 +10,14 @@ export default function Passwords() {
         stopIndex={10}
         o1={"Duck ID"}
         o1d={"Email, Canvas, Microsoft, etc."}
-        o1l={""}
+        o1l={
+          "https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=31467"
+        }
         o2={"DuckWeb"}
         o2d={"Reset your DuckWeb password"}
-        o2l={""}
-        reset={false}
+        o2l={"https://duckweb.uoregon.edu"}
+        reset={true}
       />
-      {/* <Footer /> */}
     </>
   );
 }

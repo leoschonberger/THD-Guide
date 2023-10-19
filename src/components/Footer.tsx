@@ -11,7 +11,7 @@ export default function Footer() {
             target="_blank"
             className="hover:underline"
           >
-            Leo Schonberger.
+            Leo Schonberger
           </a>
         </span>
         <ul className="mt-3 flex flex-wrap items-center text-sm font-medium text-black  sm:mt-0">
