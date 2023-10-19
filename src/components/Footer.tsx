@@ -13,7 +13,6 @@ export default function Footer() {
           >
             Leo Schonberger
           </a>
-          . All Rights Reserved.
         </span>
         <ul className="mt-3 flex flex-wrap items-center text-sm font-medium text-black  sm:mt-0">
           <li>
