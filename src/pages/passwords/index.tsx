@@ -6,8 +6,8 @@ export default function Passwords() {
       <Selection2
         pageTitle="THD- Passwords"
         heading={"What password would you like to reset?"}
-        startIndex={6}
-        stopIndex={10}
+        startIndex={5}
+        stopIndex={13}
         o1={"Duck ID"}
         o1d={"Email, Canvas, Microsoft, etc."}
         o1l={

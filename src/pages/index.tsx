@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
 import Footer from "~/components/Footer";
+import SelectionBox from "~/components/SelectionBox";
 import ThdHeader from "~/components/ThdHeader";
 
 type FormatHeadingProps = {
@@ -40,32 +40,37 @@ export default function Home() {
           />
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-8">
             {/*First box*/}
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/20 p-4 text-white hover:bg-white/30"
-              href="/print/"
-            >
-              <h3 className="text-center text-2xl font-bold">Printing 🖨️</h3>
-              <div className="text-center text-lg">Print at the UO</div>
-            </Link>
+            <SelectionBox
+              external={false}
+              centered={true}
+              link="/print/"
+              title="Printing 🖨️"
+              description="Print at the UO"
+            />
             {/*Second box*/}
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/20 p-4 text-white hover:bg-white/30"
-              href="https://service.uoregon.edu/TDClient/2030/Portal/KB/?CategoryID=6954"
-              target="_blank"
-            >
-              <h3 className="text-center text-2xl font-bold">Wifi 📡</h3>
-              <div className="text-center text-lg">Get help getting online</div>
-            </Link>
+            <SelectionBox
+              external={true}
+              centered={true}
+              link="https://service.uoregon.edu/TDClient/2030/Portal/KB/?CategoryID=6954"
+              title="Wifi 📡"
+              description="Get help getting online"
+            />
             {/*Third box*/}
-            <Link
-              className="max-w-s flex flex-col gap-4 rounded-xl bg-white/20 p-4 text-white hover:bg-white/30"
-              href="/passwords/"
-            >
-              <h3 className="text-center text-2xl font-bold">Passwords 🔐</h3>
-              <div className="text-center text-lg">
-                Reset your DuckID or DuckWeb
-              </div>
-            </Link>
+            <SelectionBox
+              external={false}
+              centered={true}
+              link="/passwords/"
+              title="Passwords 🔐"
+              description="Reset your DuckID or DuckWeb"
+            />
+            {/*Fourth box*/}
+            <SelectionBox
+              external={true}
+              centered={true}
+              link="https://www.google.com"
+              title="Title"
+              description="Alrighty"
+            />
           </div>
         </div>
         <Footer />
