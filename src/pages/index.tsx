@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
 import Footer from "~/components/Footer";
+import SelectionBox from "~/components/SelectionBox";
 import ThdHeader from "~/components/ThdHeader";
 
 type FormatHeadingProps = {
@@ -39,33 +39,54 @@ export default function Home() {
             stopIndex={16}
           />
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-8">
-            {/*First box*/}
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/20 p-4 text-white hover:bg-white/30"
-              href="/print/"
-            >
-              <h3 className="text-center text-2xl font-bold">Printing 🖨️</h3>
-              <div className="text-center text-lg">Print at the UO</div>
-            </Link>
-            {/*Second box*/}
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/20 p-4 text-white hover:bg-white/30"
-              href="https://service.uoregon.edu/TDClient/2030/Portal/KB/?CategoryID=6954"
-              target="_blank"
-            >
-              <h3 className="text-center text-2xl font-bold">Wifi 📡</h3>
-              <div className="text-center text-lg">Get help getting online</div>
-            </Link>
-            {/*Third box*/}
-            <Link
-              className="max-w-s flex flex-col gap-4 rounded-xl bg-white/20 p-4 text-white hover:bg-white/30"
-              href="/passwords/"
-            >
-              <h3 className="text-center text-2xl font-bold">Passwords 🔐</h3>
-              <div className="text-center text-lg">
-                Reset your DuckID or DuckWeb
-              </div>
-            </Link>
+            {/*Box #1*/}
+            <SelectionBox
+              external={false}
+              centered={true}
+              link="/print/"
+              title="Printing 🖨️"
+              description="Print at the UO"
+            />
+            {/*Box #2*/}
+            <SelectionBox
+              external={true}
+              centered={true}
+              link="https://service.uoregon.edu/TDClient/2030/Portal/KB/?CategoryID=6954"
+              title="Wifi 📡"
+              description="Get help getting online"
+            />
+            {/*Box #3*/}
+            <SelectionBox
+              external={false}
+              centered={true}
+              link="/passwords/"
+              title="Passwords 🔐"
+              description="Reset your DuckID or DuckWeb"
+            />
+            {/*Box #4*/}
+            <SelectionBox
+              external={true}
+              centered={true}
+              link="https://service.uoregon.edu/TDClient/2030/Portal/Requests/TicketRequests/NewForm?ID=zVTv9AZb5zc_"
+              title="Submit a ticket 🎫"
+              description="Submit a ticket to the UO Service Portal"
+            />
+            {/*Box #5*/}
+            <SelectionBox
+              external={true}
+              centered={true}
+              link="https://service.uoregon.edu/TDClient/2030/Portal/Requests/ServiceCatalog"
+              title="Extended Catalog 📚"
+              description="All documentation on service.uoregon.edu"
+            />
+            {/*Box #6*/}
+            <SelectionBox
+              external={true}
+              centered={true}
+              link="https://service.uoregon.edu/TDClient/2030/Portal/Requests/PopularServices"
+              title="View Popular Topics ❤️"
+              description="Most Viewed Articles"
+            />
           </div>
         </div>
         <Footer />
@@ -73,3 +94,5 @@ export default function Home() {
     </div>
   );
 }
+
+// TODO: Implement SelectionPage for this page

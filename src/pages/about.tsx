@@ -3,15 +3,17 @@ import ThdHeader from "~/components/ThdHeader";
 
 export default function About() {
   return (
-    <div className="text-center">
+    <div className="">
       <ThdHeader />
-      <div className="center">
-        <h1>
-          Hey, thanks for using this site. It's just a personal project for now.
+      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#007030] to-[#FEE11A]">
+        <h1 className="border-r-yellow-300 text-xl">
+          Hey, thanks for using this site. Feel free to bookmark and share it!
         </h1>
-      </div>
-      <p>- Leo</p>
-      <Restart />
+        <h1 className="text-xl">- Leo</h1>
+        <div className="p-12">
+          <Restart></Restart>
+        </div>
+      </main>
     </div>
   );
 }

@@ -40,3 +40,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# Test Page
+src/pages/test.tsx
