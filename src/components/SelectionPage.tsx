@@ -2,9 +2,7 @@ import Head from "next/head";
 import Footer from "~/components/Footer";
 import Restart from "~/components/Rewind";
 import ThdHeader from "~/components/ThdHeader";
-import SelectionBox from "./SelectionBox";
-
-// TODO: Depricate this component
+import { ReactNode } from "react";
 
 type FormatHeadingProps = {
   hed: string;
@@ -27,33 +25,23 @@ function FormatHeading({ hed, startIndex, stopIndex }: FormatHeadingProps) {
   );
 }
 
-type Selection2Props = {
+type SelectionPage = {
   pageTitle: string;
   heading: string;
   startIndex: number;
   stopIndex: number;
-  o1: string;
-  o1d: string;
-  o1l: string;
-  o2: string;
-  o2d: string;
-  o2l: string;
+  boxesList: ReactNode;
   reset: boolean;
 };
 
-export default function Selection2({
+export default function SelectionPage({
   pageTitle,
   heading,
   startIndex,
   stopIndex,
-  o1,
-  o1d,
-  o1l,
-  o2,
-  o2d,
-  o2l,
+  boxesList,
   reset,
-}: Selection2Props) {
+}: SelectionPage) {
   return (
     <div>
       <Head>
@@ -67,22 +55,11 @@ export default function Selection2({
             startIndex: startIndex,
             stopIndex: stopIndex,
           })}
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-            <SelectionBox
-              external={false}
-              centered={false}
-              link={o1l}
-              title={o1}
-              description={o1d}
-            />
-            <SelectionBox
-              external={false}
-              centered={false}
-              link={o2l}
-              title={o2}
-              description={o2d}
-            />
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-4">
+            {boxesList}
           </div>
+
+          {/* TODO: Fix this */}
           {reset ? <Restart /> : <></>}
         </div>
         <Footer />

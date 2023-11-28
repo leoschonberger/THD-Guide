@@ -1,28 +1,45 @@
-# Create T3 App
+# THD-Portal
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This project is aimed to help empower University of Oregon members to resolve tech issues on their own. It's a quick and easy to use front end for the existing UO service portal page.
+Students can access this site by tapping their phone on one of the NFC tags located at print stations and at the Tech Help Desk in the Knight Library.
 
-## What's next? How do I make an app with this?
+_This page is not affiliated with the University of Oregon in any way._
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## What is it?
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+This site provides a guide to quick links for Printing, Wifi, and Password reset resources.
 
+It currently covers:
+
+- Printing from UO computers + Personal Devices
+- Connecting to the "UO Secure" Wifi network
+- Resetting your DuckID and DuckWeb passwords
+
+## What is the tech stack?
+
+This project is built on the [T3 Stack](https://create.t3.gg/). It uses the following technologies:
+
+- [TypeScript](https://www.typescriptlang.org)
 - [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
 - [Tailwind CSS](https://tailwindcss.com)
 - [tRPC](https://trpc.io)
+- [Vercel](https://vercel.com)
 
-## Learn More
+> Note: This is my first project using most of the above technologies, so I'm still learning the ropes. If you have any suggestions, please make an issue!
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Want to contribute?
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+That's great! If you want to contribute or have feature requests, please feel free to pull this repo and submit a PR. If you have any questions, feel free to reach out either through Github or via [email](mailto:leoschonberger@gmail.com).
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## How do I build this?
 
-## How do I deploy this?
+1. Clone the repo
+2. Ensure that NodeJS and npm are installed on your machine.
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+> Run the following command to start the dev environment:
+
+    npm run dev
+
+> To build:
+
+    npm run build

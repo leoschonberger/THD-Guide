@@ -15,7 +15,7 @@ export default function ThdHeader() {
                 className="py-1 text-lg font-extrabold tracking-tight text-white outline outline-gray-800 sm:text-[1rem] md:p-1.5"
                 style={{ padding: "0.5rem" }}
               >
-                THD Portal
+                THD Guide
               </Link>
             </div>
           </li>

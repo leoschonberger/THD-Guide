@@ -39,7 +39,7 @@ export default function Home() {
             stopIndex={16}
           />
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-8">
-            {/*First box*/}
+            {/*Box #1*/}
             <SelectionBox
               external={false}
               centered={true}
@@ -47,7 +47,7 @@ export default function Home() {
               title="Printing 🖨️"
               description="Print at the UO"
             />
-            {/*Second box*/}
+            {/*Box #2*/}
             <SelectionBox
               external={true}
               centered={true}
@@ -55,7 +55,7 @@ export default function Home() {
               title="Wifi 📡"
               description="Get help getting online"
             />
-            {/*Third box*/}
+            {/*Box #3*/}
             <SelectionBox
               external={false}
               centered={true}
@@ -63,13 +63,29 @@ export default function Home() {
               title="Passwords 🔐"
               description="Reset your DuckID or DuckWeb"
             />
-            {/*Fourth box*/}
+            {/*Box #4*/}
             <SelectionBox
               external={true}
               centered={true}
-              link="https://www.google.com"
-              title="Title"
-              description="Alrighty"
+              link="https://service.uoregon.edu/TDClient/2030/Portal/Requests/TicketRequests/NewForm?ID=zVTv9AZb5zc_"
+              title="Submit a ticket 🎫"
+              description="Submit a ticket to the UO Service Portal"
+            />
+            {/*Box #5*/}
+            <SelectionBox
+              external={true}
+              centered={true}
+              link="https://service.uoregon.edu/TDClient/2030/Portal/Requests/ServiceCatalog"
+              title="Extended Catalog 📚"
+              description="All documentation on service.uoregon.edu"
+            />
+            {/*Box #6*/}
+            <SelectionBox
+              external={true}
+              centered={true}
+              link="https://service.uoregon.edu/TDClient/2030/Portal/Requests/PopularServices"
+              title="View Popular Topics ❤️"
+              description="Most Viewed Articles"
             />
           </div>
         </div>
@@ -78,3 +94,5 @@ export default function Home() {
     </div>
   );
 }
+
+// TODO: Implement SelectionPage for this page
