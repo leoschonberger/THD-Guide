@@ -49,9 +49,9 @@ export default function Home() {
             />
             {/*Box #2*/}
             <SelectionBox
-              external={true}
+              external={false}
               centered={true}
-              link="https://service.uoregon.edu/TDClient/2030/Portal/KB/?CategoryID=6954"
+              link="/wifi/"
               title="Wifi 📡"
               description="Get help getting online"
             />
