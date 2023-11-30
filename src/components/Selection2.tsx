@@ -59,15 +59,15 @@ export default function Selection2({
       <Head>
         <title>{pageTitle}</title>
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#007030] to-[#FEE11A]">
+      <main className="relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#007030] to-[#FEE11A]">
         <ThdHeader />
-        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
+        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-6 ">
           {FormatHeading({
             hed: heading,
             startIndex: startIndex,
             stopIndex: stopIndex,
           })}
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
+          <div className="grid grid-cols-1 gap-4 pb-16 sm:grid-cols-2 md:gap-8">
             <SelectionBox
               external={false}
               centered={false}

@@ -4,7 +4,7 @@ export default function ThdHeader() {
   return (
     <>
       <header
-        className="fixed left-0 top-10 z-20 flex w-full place-content-center items-center md:items-center md:p-4
+        className="left-0 top-10 z-10 flex w-full place-content-center items-center sm:fixed sm:top-0 sm:justify-center sm:px-0 sm:py-2 md:items-center md:py-5
       "
       >
         <ul>
