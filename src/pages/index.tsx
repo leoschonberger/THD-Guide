@@ -26,19 +26,19 @@ function FormatHeading({ hed, startIndex, stopIndex }: FormatHeadingProps) {
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>THD Portal</title>
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#007030] to-[#FEE11A]">
+      <main className="relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#007030] to-[#FEE11A]">
         <ThdHeader />
-        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
+        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-6 ">
           <FormatHeading
             hed={"What can we help you with today?"}
             startIndex={12}
             stopIndex={16}
           />
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-8">
+          <div className="grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3 md:gap-10">
             {/*Box #1*/}
             <SelectionBox
               external={false}
@@ -91,7 +91,7 @@ export default function Home() {
         </div>
         <Footer />
       </main>
-    </div>
+    </>
   );
 }
 
