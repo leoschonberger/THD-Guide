@@ -48,7 +48,7 @@ export default function test() {
           />
         </>
       }
-      reset={true}
+      backButton={true}
     />
   );
 }

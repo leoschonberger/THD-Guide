@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from "~/components/Footer";
-import Restart from "~/components/Rewind";
+import BackButton from "~/components/Rewind";
 import ThdHeader from "~/components/ThdHeader";
 import { ReactNode } from "react";
 
@@ -31,7 +31,7 @@ type SelectionPage = {
   startIndex: number;
   stopIndex: number;
   boxesList: ReactNode;
-  reset: boolean;
+  backButton: boolean;
 };
 
 export default function SelectionPage({
@@ -40,14 +40,14 @@ export default function SelectionPage({
   startIndex,
   stopIndex,
   boxesList,
-  reset,
+  backButton,
 }: SelectionPage) {
   return (
     <div>
       <Head>
         <title>{pageTitle}</title>
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#007030] to-[#FEE11A]">
+      <main className="relative flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#007030] to-[#FEE11A]">
         <ThdHeader />
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-6">
           {FormatHeading({
@@ -55,12 +55,10 @@ export default function SelectionPage({
             startIndex: startIndex,
             stopIndex: stopIndex,
           })}
-          <div className="grid grid-cols-1 gap-4 pb-6 sm:grid-cols-2 md:gap-4">
+          <div className="grid grid-cols-3 items-center justify-center gap-4 sm:grid-cols-3 md:gap-10">
             {boxesList}
           </div>
-
-          {/* TODO: Fix this */}
-          {reset ? <Restart /> : <></>}
+          {backButton ? <BackButton /> : <></>}
         </div>
         <Footer />
       </main>
