@@ -3,7 +3,6 @@
 This project is aimed to help empower University of Oregon members to resolve tech issues on their own. It's a quick and easy to use front end for the existing UO service portal page.
 Students can access this site by tapping their phone on one of the NFC tags located at print stations and at the Tech Help Desk in the Knight Library.
 
-_This page is not affiliated with the University of Oregon in any way._
 
 ## What is it?
 
