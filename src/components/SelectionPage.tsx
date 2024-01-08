@@ -55,7 +55,7 @@ export default function SelectionPage({
             startIndex: startIndex,
             stopIndex: stopIndex,
           })}
-          <div className="grid grid-cols-3 items-center justify-center gap-4 sm:grid-cols-3 md:gap-10">
+          <div className="grid items-center justify-center gap-4 pb-5 sm:grid-cols-1 sm:gap-5 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
             {boxesList}
           </div>
           {backButton ? <BackButton /> : <></>}
