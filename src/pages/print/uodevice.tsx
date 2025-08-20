@@ -1,21 +1,30 @@
-import Selection2 from "~/components/Selection2";
+import SelectionBox from "~/components/SelectionBox";
+import SelectionPage from "~/components/SelectionPage";
 
 export default function uoDevicePrinting() {
   return (
-    <Selection2
+    <SelectionPage
       pageTitle="THD- UO Device Printing"
       heading={"What kind of UO device?"}
       startIndex={13}
       stopIndex={15}
-      o1={"Labs Machine "}
-      o1d={"For computer labs and library computers. (Win/Mac)"}
-      o1l={
-        "https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=140517"
-      }
-      o2={"Internet Kiosk"}
-      o2d={"Print from our public kiosks."}
-      o2l={
-        "https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=140515"
+      boxesList={
+        <>
+          <SelectionBox
+            external={true}
+            centered={false}
+            link="https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=140517"
+            title="Labs Machine "
+            description="For computer labs and library computers. (Win/Mac)"
+          />
+          <SelectionBox
+            external={true}
+            centered={false}
+            link="https://service.uoregon.edu/TDClient/2030/Portal/KB/ArticleDet?ID=140515"
+            title="Internet Kiosk"
+            description="Print from our public kiosks."
+          />
+        </>
       }
       reset={true}
     />
