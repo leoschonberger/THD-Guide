@@ -3,7 +3,7 @@
 This project is aimed to help empower University of Oregon members to resolve tech issues on their own. It's a quick and easy to use front end for the existing UO service portal page.
 Students can access this site by tapping their phone on one of the NFC tags located at print stations and at the Tech Help Desk in the Knight Library.
 
-_This page is not affiliated with the University of Oregon in any way._
+_This website is not currently in use at the University of Oregon._
 
 ## What is it?
 
@@ -19,27 +19,47 @@ It currently covers:
 
 This project is built on the [T3 Stack](https://create.t3.gg/). It uses the following technologies:
 
-- [TypeScript](https://www.typescriptlang.org)
-- [Next.js](https://nextjs.org)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-- [Vercel](https://vercel.com)
-
-> Note: This is my first project using most of the above technologies, so I'm still learning the ropes. If you have any suggestions, please make an issue!
+- [TypeScript](https://www.typescriptlang.org) 5.6+
+- [Next.js](https://nextjs.org) 15.0+
+- [React](https://reactjs.org) 18.3+
+- [Tailwind CSS](https://tailwindcss.com) 3.4+
+- [tRPC](https://trpc.io) 11.0+
+- [TanStack Query](https://tanstack.com/query) (React Query) 5.0+
+- [Vercel](https://vercel.com) for deployment
 
 ## Want to contribute?
 
-That's great! If you want to contribute or have feature requests, please feel free to pull this repo and submit a PR. If you have any questions, feel free to reach out either through Github or via [email](mailto:leoschonberger@gmail.com).
+That's great! If you want to contribute or have feature requests, please feel free to pull this repo and submit a PR. If you have any questions, feel free to reach out either through GitHub.
 
 ## How do I build this?
 
+### Prerequisites
+- [Node.js](https://nodejs.org/) 18.0+ and npm
+
+### Setup
 1. Clone the repo
-2. Ensure that NodeJS and npm are installed on your machine.
+   ```bash
+   git clone https://github.com/leoschonberger/THD-Guide.git
+   cd THD-Guide
+   ```
 
-> Run the following command to start the dev environment:
+2. Install dependencies
+   ```bash
+   npm install
+   ```
 
-    npm run dev
+3. Start the development server
+   ```bash
+   npm run dev
+   ```
 
-> To build:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-    npm run build
+### Build for production
+```bash
+npm run build
+npm start
+```
+
+### Other commands
+- `npm run lint` - Run ESLint
